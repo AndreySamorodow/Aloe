@@ -29,7 +29,7 @@ answer = Label(window, text='')
 answer.grid(column=0, row=3)
 
 def clicked():
-    from answer import defining_task
+    from Apps.answer import defining_task
     def search_answer(text=defining_task()):
         client = Client()
         response = client.chat.completions.create(model="gpt-4o", messages=[{"role": "user", "content": f"{text}. Дай только четкий ответ, либо ответ из предложенных вариантов, если не знаешь пиши незнаю. После ответа писать ничего не нужно. и переноси строки"}],)
