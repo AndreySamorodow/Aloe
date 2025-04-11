@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 
 # Загрузка модели YOLOv8
-model = YOLO('Aloe 2.0/best.pt')
+model = YOLO('Aloe/best.pt')
 
 # Функция для обработки изображения
 def process_image(image_path):
